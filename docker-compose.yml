@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  nodejs:
+    build:
+      context: ./app
+  nginx:
+    build: 
+      context: ./nginx
+    ports:
+      - "80:80"
